@@ -1,0 +1,13 @@
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --main-font-size: 12px;
+
+  /*colors*/
+  --main-decoration-color: rgb(255, 107, 8);
+  --main-light-color: rgb(255, 255, 255);
+  --main-dark-color: rgb(0, 0, 0);
+  --main-red-color: rgb(255, 8, 37);
+
+  --footer-bg-color: rgb(247, 247, 247);
+}

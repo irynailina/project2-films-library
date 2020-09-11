@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Movies Library</title>
+  </head>
+
+  <body>
+    <header class="main_header js-main_header">
+      <div class="main_header-bg">
+        <div class="nav container">
+          <a href="#" class="nav__logo" id="navigation-logo">
+            <div class="nav__logo-img"></div>
+            <span class="nav__logo-title">Filmoteka</span>
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__btn nav__home nav__btn--active">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__btn nav__library">MY LIBRARY</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-form_wrapper container"></div>
+        <div class="btn container"></div>
+      </div>
+    </header>
+    <main class="main__content">
+      <div class="container">
+        <section class="main_section">
+          <ul class="gallery_list js-gallery_list"></ul>
+          <ul class="cardItemList js-cardItem"></ul>
+          <div id="pagination" class="pagination container"></div>
+        </section>
+      </div>
+    </main>
+    <footer class="main_footer">
+      <p class="footer__description">
+        <img
+          class="footer-description__icon"
+          src="./assets/images/icons/copyright-24px.svg"
+          width="16"
+          height="16"
+          alt="image description"
+        />
+        2020 | All Rights Reserved Developed with
+        <img
+          class="footer-description__icon"
+          src="./assets/images/icons/favorite-heart-button.svg"
+          width="16"
+          height="16"
+          alt="image description"
+        />
+        by <a href="#" class="footer-description__link">GoIT Students</a>
+      </p>
+    </footer>
+    <div class="spinner-overlay is-hidden" id="spinner">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+  </body>
+</html>

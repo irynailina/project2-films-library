@@ -1,0 +1,252 @@
+.gallery_list {
+  padding-bottom: 32px;
+}
+
+.gallery-list__item {
+  width: 272px;
+}
+
+
+.gallery-list__item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.gallery-list__item_image {
+  padding-bottom: 12px;
+
+}
+
+
+.gallery-list__item_title {
+  text-transform: uppercase;
+  color: var(--main-dark-color);
+  font-size: var(--main-font-size);
+  font-family: var(--main-font);
+  font-weight: medium;
+}
+
+.filmInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+
+}
+
+.filmInfo__genre {
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  color: var(--main-decoration-color);
+  font-weight: 700;
+}
+
+.filmInfo__slash,
+.filmInfo__year {
+  margin-right: 6px;
+}
+
+.filmInfo__slash {
+  margin-left: 6px;
+}
+
+.filmInfo__popularity {
+  width: 36px;
+  background-color: var(--main-decoration-color);
+  color: var(--main-light-color);
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+/* =============OVERLAY============== */
+
+.item-wrap {
+  position: relative;
+  margin: 0;
+  width: 272px;
+  height: 402px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  background: rgba(77, 77, 77, .5);
+  opacity: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.item-wrap:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(77, 77, 77, .5);
+  color: white;
+  width: 118px;
+  height: 42px;
+  border: white solid 1px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 620px;
+  }
+
+
+
+  .gallery_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 54px;
+  }
+
+  .gallery-list__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  .filmInfo {
+    display: flex;
+  }
+
+
+  .gallery_list__item:nth-last-child(-n+2) {
+    padding-bottom: 30px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    width: 876px;
+  }
+
+  .gallery_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-list__item:nth-child(2n) {
+    margin-right: 20px;
+  }
+
+
+
+  .gallery-list__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+
+  .gallery-list__item,
+  .filmInfo,
+  .gallery-list__item_image {
+    width: 272px;
+  }
+
+  .item-wrap {
+    position: relative;
+    margin: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97%;
+    background: rgba(77, 77, 77, .5);
+    opacity: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+
+  }
+
+  .item-wrap:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  /* ================ARROW========================= */
+
+  .gallery-list__item {
+    position: relative;
+  }
+
+
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 8%;
+    left: 4%;
+    margin: 100px 0 0 100px;
+    width: 100px;
+    height: 100px;
+    border: solid 6px #999;
+    border-radius: 100%;
+    z-index: 1;
+    transition: all .2s linear;
+  }
+
+  .arrow:before,
+  .arrow:after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 10%;
+    top: 41%;
+    left: 55%;
+    background: #999;
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all .2s linear;
+  }
+
+  .arrow:after {
+    z-index: 3;
+    top: 59%;
+    left: 55%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .arrow:hover {
+    border-color: blueviolet;
+    border: solid 8px var(--main-decoration-color);
+  }
+
+  .arrow:hover::after,
+  .arrow:hover::before {
+    background: var(--main-decoration-color);
+    border-color: var(--main-decoration-color);
+  }
+
+  .arrow:hover:active {
+    border-color: var(--main-decoration-color);
+
+  }
+
+  .arrow:hover:active::before,
+  .arrow:hover:active::after {
+    background: var(--main-decoration-color);
+
+  }
+
+}
